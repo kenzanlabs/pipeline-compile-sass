@@ -6,18 +6,6 @@ var compilePipeline = require('./src/index.js');
 var testPipeline = require('pipeline-test-node');
 var validatePipeline = require('pipeline-validate-js');
 
-var options = {
-  plugins: {
-    istanbul: {
-      thresholds: {
-        global: {
-          branches: 70
-        }
-      }
-    }
-  }
-};
-
 var config = {
   jsFiles: [
     '*.js',
@@ -46,7 +34,7 @@ gulp.task('compile:sass', function() {
 gulp.task('build', ['compile:sass'], function() {
   return gulp
     .src(config.test.jsFiles)
-    .pipe(validatePipeline.validateJS())
     .pipe(plumber())
-    .pipe(testPipeline.test(options));
+    .pipe(validatePipeline.validateJS())
+    .pipe(testPipeline.test());
 });

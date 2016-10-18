@@ -1,11 +1,11 @@
-## pipeline-compile-sass
+# pipeline-compile-sass
 
 
 ## Information
 
 | Package       | Description   | Version|
 | ------------- |:-------------:| -----:|
-| pipeline-compile-sass| This pipeline compiles SCSS files and returns CSS files | 1.0.1 |
+| pipeline-compile-sass| This pipeline compiles SCSS files and returns CSS files | 1.0.0 |
 
 # Overview
 
@@ -13,9 +13,7 @@ This pipeline assists the compilation of SCSS into CSS, while optionally allowin
 
 
 ## Install
-`npm install pipeline-compile-sass.git --save-dev`
-
-**note: https://github.com/kenzanlabs/pipeline-compile-sass/issues/7**
+`npm install pipeline-compile-sass --save-dev`
 
 ## Usage
 ```javascript

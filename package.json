@@ -1,6 +1,6 @@
 {
   "name": "pipeline-compile-sass",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "Gulp pipeline to compile SASS files",
   "author": "Marie Schmidt <mschmidt@kenzan.com> (https://github.com/mschmidt712)",
   "contributors": [
@@ -32,7 +32,7 @@
   },
   "engines": {
     "node": ">=0.10.3",
-    "npm": ">=1.0.20"
+    "npm": ">=4.0.0"
   },
   "analyze": true,
   "license": "Apache-2.0",
@@ -50,8 +50,8 @@
     "gulp": "3.9.0",
     "gulp-clean": "0.3.2",
     "gulp-expect-file": "0.0.7",
-    "gulp-plumber": "^1.1.0",
+    "gulp-plumber": "1.1.0",
     "pipeline-test-node": "1.0.1",
-    "pipeline-validate-js": "1.0.0-rc3"
+    "pipeline-validate-js": "1.0.0-rc4"
   }
 }
