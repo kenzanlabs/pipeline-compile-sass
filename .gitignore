@@ -1,0 +1,7 @@
+node_modules/
+.idea/
+dest/
+coverage/
+reports/
+tmp/
+test/fixtures/*.css

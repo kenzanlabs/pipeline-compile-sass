@@ -1,0 +1,14 @@
+$font-stack: Helvetica-Neue, sans-serif;
+$color: #cf649a;
+
+#somediv {
+  background-color: black;
+  #header {
+    font: 100% $font-stack;
+    color: $color;
+  }
+
+  #header:hover {
+    color: white;
+  }
+}

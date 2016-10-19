@@ -1,0 +1,57 @@
+{
+  "name": "pipeline-compile-sass",
+  "version": "1.0.0",
+  "description": "Gulp pipeline to compile SASS files",
+  "author": "Marie Schmidt <mschmidt@kenzan.com> (https://github.com/mschmidt712)",
+  "contributors": [
+    {
+      "name": "Owen Buckley",
+      "email": "obuckley@kenzan.com"
+    },
+    {
+      "name": "Chris Sharon",
+      "email": "csharon@kenzan.com"
+    }
+  ],
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kenzanlabs/pipeline-compile-sass"
+  },
+  "keywords": [
+    "Gulp",
+    "Tools",
+    "Keystone",
+    "Pipeline",
+    "SASS"
+  ],
+  "preferGlobal": false,
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "engines": {
+    "node": ">=0.10.3",
+    "npm": ">=4.0.0"
+  },
+  "analyze": true,
+  "license": "Apache-2.0",
+  "dependencies": {
+    "gulp-concat": "2.6.0",
+    "gulp-if": "2.0.0",
+    "gulp-sass": "2.3.2",
+    "gulp-postcss": "6.2.0",
+    "autoprefixer": "6.4.1",
+    "gulp-sourcemaps": "1.6.0",
+    "lazypipe": "1.0.1",
+    "pipeline-handyman": "0.3.0"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-clean": "0.3.2",
+    "gulp-expect-file": "0.0.7",
+    "gulp-plumber": "1.1.0",
+    "pipeline-test-node": "1.0.1",
+    "pipeline-validate-js": "1.0.0-rc4"
+  }
+}

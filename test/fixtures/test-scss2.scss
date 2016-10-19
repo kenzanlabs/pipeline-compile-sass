@@ -1,0 +1,30 @@
+@mixin padding($size, $side: 'all') {
+  @if $side == 'top' {
+    padding-top: $size;
+  }
+  @if $side == 'right'{
+    padding-right: $size;
+  }
+  @if $side == 'bottom'{
+    padding-bottom: $size;
+  }
+  @if $side == 'left'{
+    padding-left: $size;
+  }
+  @if $side == 'all' {
+    padding: $size;
+  }
+}
+
+#somediv {
+  @include padding(200px, 'top');
+}
+
+#anotherdiv {
+  @include padding(40px);
+}
+
+#lastdiv {
+  @include padding(40px, 'top');
+  @include padding(40px, 'bottom');
+}
